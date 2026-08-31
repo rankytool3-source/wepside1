@@ -1,5 +1,6 @@
 /**
  * WS Store - WhatsApp Integration & Service Booking Script
+ * Default WhatsApp Phone: 0306 8275451 (International: +923068275451)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,17 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const whatsappButtons = document.querySelectorAll('.whatsapp-btn');
 
     /**
-     * Cleans non-numeric characters for WhatsApp API link format
+     * Cleans non-numeric characters and formats Pakistani local numbers (03xx...) to international format (923xx...)
      */
     function getCleanPhone(phoneStr) {
-        return phoneStr.replace(/[^0-9]/g, '');
+        let clean = (phoneStr || '').replace(/[^0-9]/g, '');
+        // Convert local Pakistani number (e.g. 03068275451) to 923068275451 for WhatsApp API
+        if (clean.startsWith('03') && clean.length === 11) {
+            clean = '92' + clean.slice(1);
+        }
+        return clean || '923068275451';
     }
 
     /**
      * Updates all WhatsApp buttons on the page with WS Store pre-filled messages
      */
     function updateWhatsAppLinks() {
-        const cleanPhone = getCleanPhone(phoneInput.value || '15552345678');
+        const cleanPhone = getCleanPhone(phoneInput.value || '03068275451');
 
         whatsappButtons.forEach(btn => {
             const serviceName = btn.getAttribute('data-service-name') || 'Subscription';
