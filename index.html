@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Premium Subscriptions - Fast WhatsApp Delivery</title>
+    <meta name="description" content="Get premium subscriptions for Netflix, Canva Pro, AI Tools, and Spotify with instant WhatsApp ordering.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Effects -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="navbar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <span class="brand-name">PREMIUM<span>STORE</span></span>
+            </div>
+
+            <!-- WhatsApp Number Config / Quick Indicator -->
+            <div class="phone-config">
+                <i class="fa-brands fa-whatsapp phone-icon"></i>
+                <span class="phone-label">WhatsApp:</span>
+                <input type="text" id="phoneInput" value="+15552345678" placeholder="Enter phone number" title="Click to edit your WhatsApp number">
+                <button id="updatePhoneBtn" title="Save WhatsApp Number"><i class="fa-solid fa-check"></i></button>
+            </div>
+        </header>
+
+        <!-- Main Content Hero Header -->
+        <main class="main-content">
+            <section class="hero-section">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span> Official Premium Subscriptions
+                </div>
+                <h1 class="hero-title">Our 4 Core Digital Services</h1>
+                <p class="hero-subtitle">Get instant access to top digital entertainment, design, AI, and music subscriptions. Order directly via WhatsApp.</p>
+            </section>
+
+            <!-- Services Grid (Exactly 4 Services) -->
+            <section class="services-grid" id="servicesGrid">
+                
+                <!-- Service 1: Netflix Premium -->
+                <article class="service-card theme-netflix" data-service-id="netflix">
+                    <div class="card-image-wrapper cover-netflix">
+                        <div class="cover-overlay"></div>
+                        <div class="cover-content">
+                            <i class="fa-solid fa-play cover-icon"></i>
+                            <span class="cover-title">NETFLIX</span>
+                        </div>
+                        <div class="card-badge badge-netflix">4K Ultra HD</div>
+                        <div class="price-pill">$9.99 / mo</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="service-header">
+                            <div class="service-icon icon-netflix"><i class="fa-solid fa-tv"></i></div>
+                            <h2 class="service-name">Netflix Premium</h2>
+                        </div>
+                        <p class="service-desc">
+                            Official Netflix Premium subscription with 4K Ultra HD streaming, multi-screen access, downloads, and ad-free experience.
+                        </p>
+                        <div class="features-list">
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> 4K Ultra HD</span>
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> Multi-Screen</span>
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> Instant Delivery</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price-tag">
+                                <span class="price-label">Price</span>
+                                <span class="price-val">$9.99 <small>/mo</small></span>
+                            </div>
+                            <a href="#" class="whatsapp-btn" data-service-name="Netflix Premium" data-price="$9.99/mo" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Order on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 2: Canva Pro -->
+                <article class="service-card theme-canva" data-service-id="canva-pro">
+                    <div class="card-image-wrapper cover-canva">
+                        <div class="cover-overlay"></div>
+                        <div class="cover-content">
+                            <i class="fa-solid fa-wand-magic-sparkles cover-icon"></i>
+                            <span class="cover-title">Canva PRO</span>
+                        </div>
+                        <div class="card-badge badge-canva">Pro Unlocked</div>
+                        <div class="price-pill">$4.99 / mo</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="service-header">
+                            <div class="service-icon icon-canva"><i class="fa-solid fa-palette"></i></div>
+                            <h2 class="service-name">Canva Pro</h2>
+                        </div>
+                        <p class="service-desc">
+                            Full Canva Pro subscription with 100M+ premium templates, brand kits, background remover tool, and magic AI design features.
+                        </p>
+                        <div class="features-list">
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> Brand Kit</span>
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> BG Remover</span>
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> 100M+ Assets</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price-tag">
+                                <span class="price-label">Price</span>
+                                <span class="price-val">$4.99 <small>/mo</small></span>
+                            </div>
+                            <a href="#" class="whatsapp-btn" data-service-name="Canva Pro" data-price="$4.99/mo" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Order on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 3: AI Tools Suite -->
+                <article class="service-card theme-aitool" data-service-id="ai-tool">
+                    <div class="card-image-wrapper cover-aitool">
+                        <div class="cover-overlay"></div>
+                        <div class="cover-content">
+                            <i class="fa-solid fa-robot cover-icon"></i>
+                            <span class="cover-title">AI TOOLS SUITE</span>
+                        </div>
+                        <div class="card-badge badge-aitool">GPT-4o & Midjourney</div>
+                        <div class="price-pill">$14.99 / mo</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="service-header">
+                            <div class="service-icon icon-aitool"><i class="fa-solid fa-brain"></i></div>
+                            <h2 class="service-name">AI Tools Suite</h2>
+                        </div>
+                        <p class="service-desc">
+                            Premium access to top AI models including ChatGPT Plus (GPT-4o), Midjourney v6, Claude 3.5 Sonnet, and DALL·E 3.
+                        </p>
+                        <div class="features-list">
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> ChatGPT Plus</span>
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> Midjourney v6</span>
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> Claude 3.5</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price-tag">
+                                <span class="price-label">Price</span>
+                                <span class="price-val">$14.99 <small>/mo</small></span>
+                            </div>
+                            <a href="#" class="whatsapp-btn" data-service-name="AI Tools Suite" data-price="$14.99/mo" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Order on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 4: Spotify Premium -->
+                <article class="service-card theme-spotify" data-service-id="spotify">
+                    <div class="card-image-wrapper cover-spotify">
+                        <div class="cover-overlay"></div>
+                        <div class="cover-content">
+                            <i class="fa-brands fa-spotify cover-icon"></i>
+                            <span class="cover-title">SPOTIFY</span>
+                        </div>
+                        <div class="card-badge badge-spotify">Ad-Free Music</div>
+                        <div class="price-pill">$3.99 / mo</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="service-header">
+                            <div class="service-icon icon-spotify"><i class="fa-solid fa-music"></i></div>
+                            <h2 class="service-name">Spotify Premium</h2>
+                        </div>
+                        <p class="service-desc">
+                            Enjoy millions of songs and podcasts offline in Very High 320kbps audio quality with zero ad interruptions.
+                        </p>
+                        <div class="features-list">
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> Ad-Free</span>
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> Offline Mode</span>
+                            <span class="feature-tag"><i class="fa-solid fa-check"></i> 320kbps Audio</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="price-tag">
+                                <span class="price-label">Price</span>
+                                <span class="price-val">$3.99 <small>/mo</small></span>
+                            </div>
+                            <a href="#" class="whatsapp-btn" data-service-name="Spotify Premium" data-price="$3.99/mo" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Order on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Premium Store. All rights reserved. Direct orders via WhatsApp.</p>
+        </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
