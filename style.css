@@ -66,6 +66,44 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Top Announcement Bar */
+.top-announcement {
+    background: linear-gradient(90deg, rgba(234, 179, 8, 0.15) 0%, rgba(18, 140, 126, 0.25) 50%, rgba(234, 179, 8, 0.15) 100%);
+    border-bottom: 1px solid rgba(234, 179, 8, 0.25);
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+}
+
+.text-gold {
+    color: var(--gold-primary);
+}
+
+.top-announcement-link {
+    color: var(--whatsapp-green);
+    text-decoration: none;
+    font-weight: 700;
+    background: rgba(37, 211, 102, 0.15);
+    border: 1px solid rgba(37, 211, 102, 0.3);
+    padding: 3px 12px;
+    border-radius: var(--radius-pill);
+    transition: var(--transition-fast);
+}
+
+.top-announcement-link:hover {
+    background: var(--whatsapp-green);
+    color: #ffffff;
+}
+
 /* Ambient Metallic Background Glows */
 .glow-bg {
     position: fixed;
@@ -220,7 +258,7 @@ body {
 /* Hero Section */
 .hero-section {
     text-align: center;
-    max-width: 760px;
+    max-width: 800px;
     margin: 0 auto 56px auto;
 }
 
@@ -270,6 +308,35 @@ body {
     color: var(--text-muted);
     font-weight: 400;
     line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.hero-subtitle strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Trust Badges Bar */
+.trust-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.trust-item {
+    font-size: 13px;
+    color: #e2e8f0;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(234, 179, 8, 0.2);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
 }
 
 /* Services Grid (Exactly 4 Services) */
@@ -500,6 +567,12 @@ body {
 
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
+    .top-announcement {
+        font-size: 12px;
+        flex-direction: column;
+        gap: 6px;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;

@@ -1,6 +1,6 @@
 /**
  * WS Store - WhatsApp Integration & Service Booking Script
- * Default WhatsApp Phone: 0306 8275451
+ * Default WhatsApp Phone: 0332 4013881 (International: +923324013881)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (clean.startsWith('03') && clean.length === 11) {
             clean = '92' + clean.slice(1);
         }
-        return clean || '923068275451';
+        return clean || '923324013881';
     }
 
     /**
-     * Updates all WhatsApp buttons on the page with WS Store pre-filled messages (no price)
+     * Updates all WhatsApp buttons on the page with WS Store pre-filled messages
      */
     function updateWhatsAppLinks() {
-        const cleanPhone = getCleanPhone(phoneInput.value || '03068275451');
+        const cleanPhone = getCleanPhone(phoneInput.value || '03324013881');
 
         whatsappButtons.forEach(btn => {
             const serviceName = btn.getAttribute('data-service-name') || 'Subscription';
