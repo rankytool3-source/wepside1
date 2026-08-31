@@ -1,5 +1,5 @@
 /**
- * Apex Premium Store - WhatsApp Integration & Service Booking
+ * WS Store - WhatsApp Integration & Service Booking Script
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * Updates all WhatsApp buttons on the page with customized pre-filled messages
+     * Updates all WhatsApp buttons on the page with WS Store pre-filled messages
      */
     function updateWhatsAppLinks() {
         const cleanPhone = getCleanPhone(phoneInput.value || '15552345678');
@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const serviceName = btn.getAttribute('data-service-name') || 'Subscription';
             const price = btn.getAttribute('data-price') || '';
 
-            // Construct customized WhatsApp inquiry message for each subscription service
-            const message = `Hello! I want to buy ${serviceName} (${price}). Please share payment details and activation instructions.`;
+            // Construct customized WhatsApp inquiry message for WS Store
+            const message = `Hello WS Store! I want to buy ${serviceName} (${price}). Please share payment details and activation instructions.`;
 
             // Encode message safely for URL query string
             const encodedMessage = encodeURIComponent(message);
@@ -60,11 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Console confirmation when WhatsApp buttons are clicked
+    // Console log when buttons are clicked
     whatsappButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const currentHref = btn.getAttribute('href');
-            console.log('Redirecting to WhatsApp:', currentHref);
+            console.log('WS Store opening WhatsApp:', currentHref);
         });
     });
 });
