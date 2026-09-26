@@ -15,6 +15,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Hacked / Glitch Error Overlay (Blocks website with red/white & colorful glitch boxes) -->
+    <div id="hackedOverlay" class="hacked-overlay active">
+        <!-- CRT Scanline effect -->
+        <div class="glitch-scanline"></div>
+        
+        <!-- Background Colorful Glitch Grid -->
+        <div class="glitch-grid-container" id="glitchGrid"></div>
+
+        <!-- Central Hacked / System Crash Red-White Box Panel -->
+        <div class="glitch-center-card">
+            <div class="glitch-card-header">
+                <div class="glitch-badge red-badge"><i class="fa-solid fa-triangle-exclamation"></i> SYSTEM CRASHED</div>
+                <div class="glitch-badge white-badge">ERROR 0x88F002</div>
+                <div class="glitch-badge color-badge">HACKED / BLOCKED</div>
+            </div>
+            
+            <div class="glitch-box-display">
+                <!-- Red, White & Multicolor Abstract Box Matrix -->
+                <div class="box-matrix">
+                    <div class="g-box red-box pulse-fast"></div>
+                    <div class="g-box white-box pulse-slow"></div>
+                    <div class="g-box cyan-box flicker"></div>
+                    <div class="g-box red-box-dark shift"></div>
+                    <div class="g-box magenta-box pulse-fast"></div>
+                    <div class="g-box white-box-bright"></div>
+                    <div class="g-box yellow-box flicker"></div>
+                    <div class="g-box red-box pulse-slow"></div>
+                    <div class="g-box green-box shift"></div>
+                </div>
+                
+                <div class="glitch-corrupted-text">
+                    <div class="glitch-title" data-text="SYSTEM HACKED & OFF-LINE">SYSTEM HACKED & OFF-LINE</div>
+                    <span class="sub-text">█ ▓ ▒ ░ ACCESS BLOCKED :: CRITICAL FAILURE ░ ▒ ▓ █</span>
+                </div>
+
+                <!-- Live Glitching Box Stream -->
+                <div class="glitch-strip-container" id="glitchStrips"></div>
+            </div>
+
+            <!-- Red & White Status Boxes -->
+            <div class="status-boxes-row">
+                <div class="status-box box-red">
+                    <span class="box-tag">RED BLOCK</span>
+                    <div class="block-bar red-bar"></div>
+                </div>
+                <div class="status-box box-white">
+                    <span class="box-tag">WHITE BLOCK</span>
+                    <div class="block-bar white-bar"></div>
+                </div>
+                <div class="status-box box-multi">
+                    <span class="box-tag">COLOR NOISE</span>
+                    <div class="block-bar multi-bar"></div>
+                </div>
+            </div>
+            
+            <div class="glitch-actions">
+                <button id="toggleSystemBtn" class="glitch-btn">
+                    <i class="fa-solid fa-power-off"></i> <span id="toggleBtnText">RESTORE WEBSITE (OVERRIDE)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Top Announcement Bar -->
     <div class="top-announcement">
         <i class="fa-solid fa-fire text-gold"></i> 
